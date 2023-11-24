@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
+PROJECT(MARIA_DB_TUTORIAL)
+
+SET(CMAKE_CXX_STANDARD 20)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+INCLUDE_DIRECTORIES(include)
+LINK_LIBRARIES(mariadbcpp)
+ADD_EXECUTABLE(maria_db_connector
+        src/main.cpp
+        src/maria_db_connector.cpp)
